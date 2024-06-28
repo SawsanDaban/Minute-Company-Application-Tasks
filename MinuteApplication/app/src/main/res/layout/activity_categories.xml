@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.CategoriesActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/sortButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5pt"
+                    android:layout_marginVertical="3pt"
+                    android:text="Sort by ID" />
+
+                <Button
+                    android:id="@+id/sortBasicPriceButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5pt"
+                    android:layout_marginVertical="3pt"
+                    android:text="Sort by Basic Price" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+
+                <!-- Header Row -->
+                <TableRow>
+                    <TextView
+                        android:text="ID"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:background="#f0f0f0"
+                        android:layout_margin="1dp"
+                        android:layout_column="0" />
+
+                    <TextView
+                        android:text="Category"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:background="#f0f0f0"
+                        android:layout_margin="1dp"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:text="Basic Price"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:background="#f0f0f0"
+                        android:layout_margin="1dp"
+                        android:layout_column="2" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
