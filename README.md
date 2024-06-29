@@ -145,9 +145,52 @@
 
 ---------------------
 
-## Task 2 : Convert the Georgian date to Hijiri date 
+## Task 2 : Convert the Gregorian date to Hijiri date 
 
+* I used `Calender` and `IslamicCalender` libraries privided by Java.
+* First I extended the `DatePickerDialog.OnDateSetListener` class, to use the date picker material.
+* Then I implemented the following code to get the date from the user
+  ```
+  val cal = Calendar.getInstance()
+  val year = cal.get(Calendar.YEAR)
+  val month = cal.get(Calendar.MONTH)
+  val day = cal.get(Calendar.DAY_OF_MONTH)
 
+  findViewById<Button>(R.id.pickDate).setOnClickListener {
+      DatePickerDialog(this, this, year, month, day).show()
+  }
+  ```
+* The `OnDateSet` method is called when the user picks a date, so when the user picks a date we call the methed `ConvertGregorianToHijri`
+  ```
+  override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
+        ConvertGregorianToHijri(year, month, dayOfMonth)
+  }
+  ```
+* The implementation for the `ConvertGregorianToHijri` method
+  ```
+  private fun ConvertGregorianToHijri(year: Int, month: Int, dayOfMonth: Int) {
+        val gregorianCalendar = Calendar.getInstance()
+        gregorianCalendar.set(year, month, dayOfMonth)
+
+        findViewById<TextView>(R.id.georgoanText).text = "Picked Date: " + gregorianFormatter.format(gregorianCalendar.timeInMillis)
+        Log.i("GregorianCalendar", gregorianFormatter.format(gregorianCalendar.timeInMillis))
+
+        val islamicCalendar = IslamicCalendar()
+        islamicCalendar.time = gregorianCalendar.time
+
+        val hijriYear = islamicCalendar.get(IslamicCalendar.YEAR)
+        val hijriMonth = islamicCalendar.get(IslamicCalendar.MONTH) // Months are 0-based
+        val hijriDay = islamicCalendar.get(IslamicCalendar.DAY_OF_MONTH)
+
+        val monthName = getHijriMonthName(hijriMonth)
+
+        findViewById<TextView>(R.id.hijriText).text = "Converted Date: " + String.format(Locale.US, "%s %02d, %d", monthName, hijriDay, hijriYear)
+        Log.i("IslamicCalendar", String.format("%d-%02d-%02d", hijriYear, hijriMonth, hijriDay))
+  }
+  ```
+* Screenshot of the output
+  
+  ![studio64_f38mlR0q7m](https://user-images.githubusercontent.com/33127540/196431761-ea5631a1-331a-42c2-af59-6588b2a39776.png)
   
 ---------------------
 
