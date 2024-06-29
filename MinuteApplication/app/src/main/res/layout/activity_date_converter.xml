@@ -6,6 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".view.DateConverterActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/convert_date"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20pt"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/georgoanText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/hijriText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text=""
+                android:textSize="24sp"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/pickDate"
+            android:layout_width="187dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/pick_date"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+    </LinearLayout>
 
 </RelativeLayout>
