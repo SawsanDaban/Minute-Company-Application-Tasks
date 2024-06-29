@@ -141,7 +141,7 @@
     
 * Screenshot of the output
   
-  ![studio64_f38mlR0q7m](https://user-images.githubusercontent.com/33127540/196431761-ea5631a1-331a-42c2-af59-6588b2a39776.png)
+  ![image](https://github.com/SawsanDaban/Minute-Company-Application-Tasks/assets/33127540/8081b174-0d1a-44db-8620-1d00f1edec24)
 
 ---------------------
 
@@ -190,7 +190,7 @@
   ```
 * Screenshot of the output
   
-  ![studio64_f38mlR0q7m](https://user-images.githubusercontent.com/33127540/196431761-ea5631a1-331a-42c2-af59-6588b2a39776.png)
+  ![image](https://github.com/SawsanDaban/Minute-Company-Application-Tasks/assets/33127540/14311488-0f50-43dc-a6c5-cad95740db93)
   
 ---------------------
 
