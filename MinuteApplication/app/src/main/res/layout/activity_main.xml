@@ -41,6 +41,17 @@
             app:cornerRadius="24dp"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
 
+        <!-- Login Sample Activity Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginActivityButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Login Sample Activity"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            app:cornerRadius="24dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
     </LinearLayout>
 
 

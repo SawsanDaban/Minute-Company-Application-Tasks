@@ -1,5 +1,6 @@
 package com.irissmile.minuteapplication.view
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,6 +11,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -19,6 +21,9 @@ class MainActivity : AppCompatActivity() {
         }
         findViewById<Button>(R.id.dateConverterButton).setOnClickListener {
             startActivity(Intent(this, DateConverterActivity::class.java))
+        }
+        findViewById<Button>(R.id.loginActivityButton).setOnClickListener {
+            startActivity(Intent(this, LoginSampleActivity::class.java))
         }
     }
 
