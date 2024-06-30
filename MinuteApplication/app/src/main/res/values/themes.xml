@@ -6,4 +6,5 @@
     </style>
 
     <style name="Theme.MinuteApplication" parent="Base.Theme.MinuteApplication" />
+
 </resources>

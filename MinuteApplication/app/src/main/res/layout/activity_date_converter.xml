@@ -4,54 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="24dp"
     tools:context=".view.DateConverterActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="16dp">
 
+        <!-- Title -->
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:text="@string/convert_date"
             android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-        <LinearLayout
+        <!-- Card for Georgian Date -->
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="20pt"
-            android:orientation="vertical">
+            android:layout_marginVertical="20dp"
+            android:background="@color/card_background_color"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
 
-            <TextView
-                android:id="@+id/georgoanText"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=""
-                android:textAlignment="center"
-                android:textSize="24sp" />
+                android:orientation="vertical"
+                android:padding="16dp">
 
-            <TextView
-                android:id="@+id/hijriText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text=""
-                android:textSize="24sp"/>
+                <TextView
+                    android:id="@+id/gregorianText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="16sp" />
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="8dp"
+                    android:background="@color/divider_color" />
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/hijriText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="16sp" />
 
-        <Button
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Button to Pick Date -->
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/pickDate"
-            android:layout_width="187dp"
-            android:layout_height="69dp"
-            android:layout_gravity="center_horizontal"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             android:text="@string/pick_date"
-            android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
 
     </LinearLayout>
 

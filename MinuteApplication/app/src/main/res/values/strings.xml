@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">MinuteApplication</string>
-    <string name="convert_date">Convert Georgian date to Hijiri date</string>
+    <string name="convert_date">Convert Gregorian date to Hijiri date</string>
     <string name="pick_date">Pick Date</string>
+    <string name="api_integration">API Integration</string>
+    <string name="date_converter">Date Converter</string>
 </resources>

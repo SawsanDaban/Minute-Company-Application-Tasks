@@ -50,7 +50,7 @@ class DateConverterActivity : AppCompatActivity(), DatePickerDialog.OnDateSetLis
         val gregorianCalendar = Calendar.getInstance()
         gregorianCalendar.set(year, month, dayOfMonth)
 
-        findViewById<TextView>(R.id.georgoanText).text = "Picked Date: " + gregorianFormatter.format(gregorianCalendar.timeInMillis)
+        findViewById<TextView>(R.id.gregorianText).text = "Picked Date: " + gregorianFormatter.format(gregorianCalendar.timeInMillis)
         Log.i("GregorianCalendar", gregorianFormatter.format(gregorianCalendar.timeInMillis))
 
         val islamicCalendar = IslamicCalendar()

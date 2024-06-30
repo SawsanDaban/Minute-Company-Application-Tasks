@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="convert_date">Convert Georgian date to Hijiri date</string>
+    <string name="convert_date">Convert Gregorian date to Hijiri date</string>
     <string name="pick_date">Pick Date</string>
 </resources>
