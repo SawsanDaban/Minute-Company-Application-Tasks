@@ -198,7 +198,7 @@
 * Modified the previous UI to be more appealing and modern
   * Main Page
     
-    ![image](https://github.com/SawsanDaban/Minute-Company-Application-Tasks/assets/33127540/5c5d86b2-30ea-4a26-a477-429840c9b7a9)
+    ![image](https://github.com/SawsanDaban/Minute-Company-Application-Tasks/assets/33127540/cbcdd69c-fec0-4a28-bdf9-0f550cb73ead)
     
   * Retrofit Page
     
@@ -207,7 +207,11 @@
   * Date Converter Page
     
     ![image](https://github.com/SawsanDaban/Minute-Company-Application-Tasks/assets/33127540/aed60d0e-d739-441e-83d3-eea34ac74b0b)
-  
+
+  * Login Sample Activity
+
+    ![image](https://github.com/SawsanDaban/Minute-Company-Application-Tasks/assets/33127540/d9ddb974-8da6-49d6-b93e-b2cf73176dcd)
+
 ---------------------
 
 * Check the application source code [HERE](MinuteApplication).
