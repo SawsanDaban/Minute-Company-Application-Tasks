@@ -195,8 +195,18 @@
 ---------------------
 
 ## Task 3 : Design a UI
+* Modified the previous UI to be more appealing and modern
+  * Main Page
+    
+    ![image](https://github.com/SawsanDaban/Minute-Company-Application-Tasks/assets/33127540/5c5d86b2-30ea-4a26-a477-429840c9b7a9)
+    
+  * Retrofit Page
+    
+    ![image](https://github.com/SawsanDaban/Minute-Company-Application-Tasks/assets/33127540/39758a13-363e-4d46-b901-fcb6d3ad29a3)
 
-  
+  * Date Converter Page
+    
+    ![image](https://github.com/SawsanDaban/Minute-Company-Application-Tasks/assets/33127540/aed60d0e-d739-441e-83d3-eea34ac74b0b)
   
 ---------------------
 
